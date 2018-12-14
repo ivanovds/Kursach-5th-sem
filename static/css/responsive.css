@@ -1,0 +1,276 @@
+/*By Ivanov D.S. ----> */
+@media (min-width: 1380px){ 
+    .home{
+    max-width: 1380px;
+    margin: 0 auto;
+    }
+    .container-color, .below-blocks, .below-main, .footer{
+    max-width: 1380px;
+    margin: 0 auto;   
+    }
+    
+}
+
+
+/*md:*/
+@media (max-width: 992px){
+    .max992-margin-minus50{
+        margin-top: -50px !important;
+    }
+    .max992-margin-minus40{
+        margin-top: -40px !important;
+    }
+    .max992-pad-minus50{
+        padding-top: -50px !important;
+    }
+    .max992-m-top-0{
+        margin-top: 0px !important;
+    }
+    .max992-p-top-0{
+        padding-top: 0px !important;
+    }
+    .max992-p-top-20{
+        padding-top: 20px !important;
+    }
+    
+}
+/* xs: */
+@media (max-width: 768px){
+    .max768-p-top-0{
+        padding-top: 0px !important;
+    }
+     .max768-p-top-20{
+        padding-top: 20px !important;
+    }
+    .max768-p-top-5{
+        padding-top: 5px !important;
+    }
+    .max768-p-top-40{
+        padding-top: 40px !important;
+    }
+    .max768-margin-minus70{
+        margin-top: -70px !important;
+    }
+    .below-main{
+        height:100px;
+    }
+    
+    .xs-center-text{
+        text-align: center;
+    }
+}
+
+@media (max-width: 1195px){
+    .max1189-p-top-5{
+        padding-top: 15px;
+    }
+}
+
+@media (max-width: 835px){
+    .size-835px{
+        height:225px;
+        width:300px;
+    }
+}
+@media (max-width: 321px){
+    .size-321px{
+        height:187.5px;
+        width:250px;
+    }
+}
+
+@media (max-width: 500px){
+    #application{
+        width: 25rem;
+    }    
+    .applicationButton {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 480px){
+    .max480-p-top-25{
+     padding-top: 25px;   
+    }
+    .max480-p-top-55{
+        padding-top: 55px;
+    }
+}
+@media (max-width: 435px){
+    #application{
+        width: 21rem;
+    }    
+}
+@media (max-width: 415px){
+    .btn{
+        padding: 1rem 1.5rem;
+    }    
+}
+@media (max-width: 340px){
+    .btn{
+        padding: 1rem 1.2rem;
+        font-size: 1.3rem;
+    }    
+    
+}
+@media (max-width: 380px){
+    .footer{
+        height: 500px !important;
+    }
+}
+
+/* <---- By Ivanov D.S.*/
+
+
+
+
+
+
+
+/*
+Author: Bootstrapthemes
+Author URI: http://www.xpeedstudio.com
+*/
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    body {
+        font-size: 1rem;
+    }
+}
+
+/* Portrait tablets and small desktops */
+/*@media (max-width: 992px) {
+
+}*/
+
+
+/* Portrait tablets and small desktops */
+@media (max-width: 991px) {
+
+    .sm-text-center{
+        text-align: center !important;
+    }
+    .sm-pull-none{
+        float: none !important;
+    }
+    .sm-m-top-10{
+        margin-top:10px;
+    }
+    .sm-m-top-20{
+        margin-top:20px;
+    }
+    .sm-m-top-30{
+        margin-top:30px;
+    }
+    .sm-m-top-40{
+        margin-top:40px;
+    }
+    .sm-m-top-50{
+        margin-top:50px;
+    }
+    .item_img i{
+        right:0%;
+    }
+
+    .home {
+        padding-top: 140px;
+        padding-bottom: 200px;
+    }
+    .navbar-brand {
+        padding: 15px 15px;
+    }
+
+
+}
+
+
+
+/* Landscape phones and portrait tablets */
+@media  (max-width: 768px) {
+    h2{
+        font-size:2rem;
+    }
+    p{
+        font-size:90%;
+        line-height: 2rem;
+    }
+    .xs-pull-none{
+        float: none !important;
+    }
+    .xs-text-center{
+        text-align: center !important;
+    }
+    .xs-m-top-10{
+        margin-top:10px;
+    }
+    .xs-m-top-30{
+        margin-top:30px;
+    }
+    .xs-m-top-40{
+        margin-top:40px;
+    }
+    .xs-m-top-50{
+        margin-top:50px;
+    }
+    .xs-m-bottom-10{
+        margin-bottom:10px;
+    }
+    .xs-m-bottom-20{
+        margin-bottom:20px;
+    }
+
+
+    .main_home .home_text h2{
+        font-size:24px;
+    }
+    .main_home .home_text h1{
+        font-size:32px;
+    }
+    .main_home .home_text h3{
+        font-size:18px;
+    }
+    .main_product .carousel-control{
+        display: none;
+    }
+
+}
+
+
+
+
+/* Landscape phones and smaller */
+@media (max-width: 479px) {
+    html {
+        font-size: 85%;
+    }
+    .main_home .home_text h1{
+        font-size:28px;
+    }
+    .main_home .home_text h3{
+        font-size:17px;
+    }
+
+
+}
+
+
+
+
+
+@media (max-width: 400px) {
+
+
+}
+
+@media (max-width: 320px) {
+    html {
+        font-size: 60.5%;
+    }
+
+
+
+
+}
+
+
+
