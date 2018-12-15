@@ -1,1 +1,1 @@
-web: gunicorn CourseWork.wgsi
+web: gunicorn CourseWork.wgsi --log-file -
