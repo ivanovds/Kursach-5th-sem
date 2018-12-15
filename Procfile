@@ -1,1 +1,1 @@
-web: gunicorn deployProject.wgsi
+web: gunicorn CourseWork.wgsi
