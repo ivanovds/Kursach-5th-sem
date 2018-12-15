@@ -1,1 +1,1 @@
-web: gunicorn landing.wgsi
+web: gunicorn CourseWork.wgsi
