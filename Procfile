@@ -1,1 +1,1 @@
-web: gunicorn deployProject.wgsi --log-file -
+web: gunicorn deployProject.wgsi
