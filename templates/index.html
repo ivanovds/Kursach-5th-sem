@@ -1,0 +1,140 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/ikonka.jpg' %}" rel="icon">
+
+  <!-- Google Fonts -->
+{#  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">#}
+
+  <!-- Bootstrap CSS File -->
+  <link href="{% static 'lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+
+  <!-- Libraries CSS Files -->
+  <link href="{% static 'lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Static navbar -->
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>    
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand" href="index.html">cours&#601;ra</a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="{% url 'index'%}">Home</a></li>
+          <li ><a href="{% url 'about'%}">About</a></li>
+{#            <li><a href="{% url 'buy'%}">Buy</a></li>#}
+{#          <li><a href="{% url 'comments'%}" class="smoothscroll">Comments</a></li>#}
+          <li><a href="{% url 'signup'%}" class="smoothscroll">Sign up</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </div>
+
+
+  <div id="headerwrap">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-lg-offset-3">
+          <h2>Привет, меня зовут ДанИИл и это мой</h2>
+          <h1>КУРСАЧ</h1>
+          <h4>#education#online#courses</h4>
+        </div>
+      </div>
+    </div>
+    <!-- /container -->
+  </div>
+
+  <section id="works"></section>
+  <div class="container">
+    <div class="row centered mt mb">
+      <h1>Our courses</h1>
+
+      <div class="col-lg-4 col-md-4 col-sm-4 gallery">
+        <a href="works.html"><img src="{% static 'img/courses/course1.jpg'%}" class="img-responsive"></a>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 gallery">
+        <a href="works.html"><img src="{% static 'img/courses/course2.jpg' %}" class="img-responsive"></a>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 gallery">
+        <a href="works.html"><img src="{% static 'img/courses/course3.jpg' %}" class="img-responsive"></a>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 gallery">
+        <a href="works.html"><img src="{% static 'img/courses/course4.jpg' %}" class="img-responsive"></a>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 gallery">
+        <a href="works.html"><img src="{% static 'img/courses/course5.jpg' %}" class="img-responsive"></a>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 gallery">
+        <a href="works.html"><img src="{% static 'img/courses/course6.jpg' %}" class="img-responsive"></a>
+      </div>
+    </div>
+  </div>
+
+  <div id="social">
+    <div class="container">
+      <div class="row centered">
+        <div class="col-xs-2">
+          <a href="#"><i class="fa fa-dribbble"></i></a>
+        </div>
+        <div class="col-xs-2">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+        </div>
+        <div class="col-xs-2">
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+        <div class="col-xs-2">
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <div class="col-xs-2">
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+        <div class="col-xs-2">
+          <a href="#"><i class="fa fa-tumblr"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="copyrights">
+    <div class="container">
+      <p>
+        &copy; Copyrights <strong>cours&#601;ra</strong>. All Rights Reserved
+      </p>
+    </div>
+  </div>
+  <!-- / copyrights -->
+
+  <!-- JavaScript Libraries -->
+  <script src="{% static 'lib/jquery/jquery.min.js'%}"></script>
+  <script src="{% static 'lib/bootstrap/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'lib/php-mail-form/validate.js' %}"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+</html>
