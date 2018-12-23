@@ -1,6 +1,11 @@
 from django import forms
+from .models import *
 
 
-class UserLoginForm(forms.Form):
-    username = forms.CharField()
-    password = forms.CharField(widget=forms.PasswordInput)
+class UserLoginForm(forms.ModelForm):
+    class Meta:
+        model = User
+        widgets = {
+            'password': forms.PasswordInput(),
+        }
+        exclude = [""]
