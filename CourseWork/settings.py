@@ -77,10 +77,10 @@ WSGI_APPLICATION = 'CourseWork.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'kursach',
-        'USER': 'postgres',
-        'PASSWORD': '5133',
-        'HOST': '127.0.0.1',
+        'NAME': 'db4fg9q0glo6tv',
+        'USER': 'amsaqnwptclwio',
+        'PASSWORD': 'c6cab5ce38dd708766602e3ddd8341da1b92a431a72c9b0ee7bf5a9b9d21e710',
+        'HOST': 'ec2-107-20-237-78.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
