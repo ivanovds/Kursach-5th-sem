@@ -76,12 +76,13 @@
             <h2 class="centered">Register</h2>
             {% endblock %}
 
-    <form class="contact-form centered" method="POST">
+    <form class="contact-form centered " method="POST">
         {% csrf_token %}
         <div>
         {% for field in form %}
-        <div class="form-group">
-            {{field.label_tag}}
+        <div class="form-group  ">
+        {% block label-tag %}
+        {% endblock %}
             <div >{{field}}</div>
             {% if field.errors%}
             {% for error in field.errors %}
