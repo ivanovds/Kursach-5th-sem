@@ -5,24 +5,26 @@ from django.contrib.auth import (
     logout,
 
 )
-from django.shortcuts import render
-from accounts.forms import UserLoginForm
+from django.shortcuts import render, redirect
 
-
-def login_view(request):
-    title = "Login"
-    form = UserLoginForm(request.POST or None)
-    if request.method == "POST" and form.is_valid():
-        username = form.cleaned_data.get("username")
-        password = form.cleaned_data.get("password")
-        new_form = form.save()
-
-    return render(request, "form.html", {"form": form, "title": title})
+from .forms import UserRegisterForm
 
 
 def register_view(request):
-    return render(request, "form.html", {})
+    if request.method == 'POST':
+        form = UserRegisterForm(request.POST or None)
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data.get('username')
+            raw_password = form.cleaned_data.get('password1')
+            user = authenticate(username=username, password=raw_password)
+            login(request, user)
+            return redirect('/home')
+    else:
+        form = UserRegisterForm()
+    return render(request, 'signup.html', {'form': form})
 
 
 def logout_view(request):
-    return render(request, "form.html", {})
+    logout(request)
+    return redirect('/home')

@@ -20,5 +20,5 @@ from myapp import views
 urlpatterns = [
     url(r'^home/', views.index, name='index'),
     url(r'^about/', views.about, name='about'),
-    url(r'^signup/', views.signup, name='signup'),
+    url(r'^signup/', include('accounts.urls')),
 ]

@@ -10,6 +10,3 @@ def index(request):
 def about(request):
     return render(request, 'about.html', locals())
 
-
-def signup(request):
-    return render(request, 'signup.html', locals())
