@@ -45,8 +45,8 @@
           <li ><a href="{% url 'about'%}">About</a></li>
 {#            <li><a href="{% url 'buy'%}">Buy</a></li>#}
 {#          <li><a href="{% url 'comments'%}" class="smoothscroll">Comments</a></li>#}
-          <li class="active"><a href="{% url 'register_view'%}" class="smoothscroll">Sign up</a></li>
-        </ul>
+         <li><a href="{% url 'register_view'%}" class="smoothscroll">Register</a></li>
+            <li><a href="{% url 'login'%}" class="smoothscroll">Sign in</a></li></ul>
       </div>
       <!--/.nav-collapse -->
     </div>
@@ -57,8 +57,10 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-lg-offset-3">
+            {% block title %}
           <h4>Want to become better?</h4>
           <h1>JOIN US</h1>
+            {% endblock %}
         </div>
       </div>
     </div>
@@ -70,8 +72,9 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
-          <h2 class="centered">Sign up with your email address</h2>
-
+            {% block content %}
+            <h2 class="centered">Register</h2>
+            {% endblock %}
 
     <form class="contact-form centered" method="POST">
         {% csrf_token %}
@@ -91,9 +94,12 @@
         {% endfor %}
         </div>
         <div class="form-send">
+            {% block content2 %}
               <button type="submit" class="btn btn-large">Sign up</button>
+            {% endblock %}
         </div>
     </form>
+
 
         </div>
       </div>
