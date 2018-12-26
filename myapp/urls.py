@@ -15,10 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.conf.urls import url, include
+from django.urls import path
+
 from myapp import views
+
 
 urlpatterns = [
     url(r'^home/', views.index, name='index'),
     url(r'^about/', views.about, name='about'),
     url(r'^register/', include('accounts.urls')),
+    url(r'^order/', views.order_view, name='order_view'),
+
 ]

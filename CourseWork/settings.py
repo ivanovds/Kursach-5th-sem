@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'CourseWork.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'kursach',
+        'NAME': 'kursach_DB',
         'USER': 'postgres',
         'PASSWORD': '5133',
         'HOST': '127.0.0.1',
