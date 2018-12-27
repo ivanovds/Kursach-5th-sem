@@ -9,9 +9,6 @@ def index(request):
     return render(request, 'index.html', locals())
 
 
-def comments(request):
-    return render(request, 'comments.html', locals())
-
 
 def order_view(request):
     if request.method == 'POST':

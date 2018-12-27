@@ -45,7 +45,7 @@
 
           <li class="active"><a href="{% url 'index'%}">Home</a></li>
             <li><a href="{% url 'order_view'%}">Order</a></li>
-          <li><a href="{% url 'comments'%}" class="smoothscroll">Comments</a></li>
+          <li><a href="{% url 'comment:feedback_view'%}" class="smoothscroll">Comments</a></li>
 
             {% if user.is_authenticated %}
         <li><a href="{% url 'logout_view'%}" class="smoothscroll">Sign out</a></li>
@@ -83,13 +83,6 @@
             . <br>
             . <br>
             . <br>
-            <h3>Но я лучше просто оставлю ссылочку на </h3>
-                <h2><a href="{% url 'comments' %}">ОТЗЫВЫ</a></h2>
-                <h3>наших довольных и не довльных клиентов</h3>
-            . <br>
-            . <br>
-            . <br>
-            . <br>
             <h1>Наши суперкурсы</h1>
 
         </div>
@@ -115,8 +108,21 @@
       <div class="col-lg-4 col-md-4 col-sm-4 gallery">
         <a href="{% url 'order_view' %}"><img src="{% static 'img/courses/course6.jpg' %}" class="img-responsive"></a>
       </div>
+        <div class="col-lg-8 col-lg-offset-2">
+            . <br>
+            . <br>
+            . <br>
+            . <br>
+            <h3>Понравился наш курс? - оставь отзыв </h3>
+                <h2><a href="{% url 'comment:feedback_view' %}">ОТЗЫВЫ</a></h2>
+                <h3>Если не понравился - тоже оставь!</h3>
+        </div>
+
+
     </div>
   </div>
+
+
 
   <div id="social">
     <div class="container">

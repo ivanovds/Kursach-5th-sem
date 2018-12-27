@@ -22,4 +22,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^', include('myapp.urls')),
     url(r'^', include('accounts.urls')),
+    url(r'^', include('comment.urls')),
 ]

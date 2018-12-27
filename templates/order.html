@@ -44,7 +44,7 @@
         <ul class="nav navbar-nav navbar-right">
                   <li ><a href="{% url 'index'%}">Home</a></li>
             <li class="active"><a href="{% url 'order_view'%}">Order</a></li>
-          <li><a href="{% url 'comments'%}" class="smoothscroll">Comments</a></li>
+          <li><a href="{% url 'comment:feedback_view'%}" class="smoothscroll">Feedback</a></li>
 
             {% if user.is_authenticated %}
         <li><a href="{% url 'logout_view'%}" class="smoothscroll">Sign out</a></li>
