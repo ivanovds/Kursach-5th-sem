@@ -19,14 +19,14 @@ class OrderForm(forms.ModelForm):
         fields = ('course', 'customer_name', 'telephone', 'email')
 
 
-# class OrderForm2(forms.ModelForm):
-#     course = forms.CheckboxSelectMultiple()
-#     telephone = forms.CharField(widget=forms.TextInput(
-#         attrs={'placeholder': 'Telephone'}))
-#     email = forms.EmailField(max_length=254, required=False, widget=forms.EmailInput(
-#         attrs={'placeholder': 'Email(optional)'}))
-#
-#     class Meta:
-#         model = Order
-#         fields = ('course', 'telephone', 'email')
-#
+class OrderForm2(forms.ModelForm):
+    course = forms.CheckboxSelectMultiple()
+    telephone = forms.CharField(widget=forms.TextInput(
+        attrs={'placeholder': 'Telephone'}))
+    email = forms.EmailField(max_length=254, required=False, widget=forms.EmailInput(
+        attrs={'placeholder': 'Email(optional)'}))
+
+    class Meta:
+        model = Order
+        fields = ('course', 'telephone', 'email')
+

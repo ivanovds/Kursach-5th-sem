@@ -38,14 +38,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-        <a class="navbar-brand" href="index.html">cours&#601;ra</a>
+        <a class="navbar-brand" href="{% url 'index'%}">cours&#601;ra</a>
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
+
           <li class="active"><a href="{% url 'index'%}">Home</a></li>
-          <li ><a href="{% url 'about'%}">About</a></li>
-{#            <li><a href="{% url 'buy'%}">Buy</a></li>#}
-{#          <li><a href="{% url 'comments'%}" class="smoothscroll">Comments</a></li>#}
+            <li><a href="{% url 'order_view'%}">Order</a></li>
+          <li><a href="{% url 'comments'%}" class="smoothscroll">Comments</a></li>
 
             {% if user.is_authenticated %}
         <li><a href="{% url 'logout_view'%}" class="smoothscroll">Sign out</a></li>
@@ -53,8 +53,6 @@
                 <li><a href="{% url 'register_view'%}" class="smoothscroll">Register</a></li>
                 <li><a href="{% url 'login'%}" class="smoothscroll">Sign in</a></li>
       {% endif %}
-
-
 
         </ul>
       </div>

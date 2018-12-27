@@ -13,7 +13,6 @@ class Course(models.Model):
 class Order(models.Model):
     course = models.ForeignKey(Course, on_delete=models.SET_NULL, null=True)
     customer_name = models.CharField(max_length=150)
-    # customer_name = models.OneToOneField(User, related_name='customer_name', on_delete=models.SET_NULL, null=True)
     telephone = models.CharField(max_length=13)
     email = models.EmailField(max_length=50, default="")
     username = models.CharField(max_length=150, default="")

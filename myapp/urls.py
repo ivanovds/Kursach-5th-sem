@@ -22,7 +22,7 @@ from myapp import views
 
 urlpatterns = [
     url(r'^home/', views.index, name='index'),
-    url(r'^about/', views.about, name='about'),
+    url(r'^comments/', views.comments, name='comments'),
     url(r'^register/', include('accounts.urls')),
     url(r'^order/', views.order_view, name='order_view'),
 
